@@ -1,0 +1,20 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-slackclone-dev-94544-authRole",
+      "UnauthRoleArn": "arn:aws:iam::982241848515:role/amplify-slackclone-dev-94544-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::982241848515:role/amplify-slackclone-dev-94544-authRole",
+      "Region": "ap-northeast-1",
+      "DeploymentBucketName": "amplify-slackclone-dev-94544-deployment",
+      "UnauthRoleName": "amplify-slackclone-dev-94544-unauthRole",
+      "StackName": "amplify-slackclone-dev-94544",
+      "StackId": "arn:aws:cloudformation:ap-northeast-1:982241848515:stack/amplify-slackclone-dev-94544/a2b55b60-ffe9-11ec-ae26-0669c4c6090f",
+      "AmplifyAppId": "dftjkm6njwnks"
+    },
+    "categories": {
+      "auth": {
+        "slackclone5fcd1cbb": {}
+      }
+    }
+  }
+}

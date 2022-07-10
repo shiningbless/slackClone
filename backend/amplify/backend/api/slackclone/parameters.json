@@ -1,0 +1,11 @@
+{
+  "AppSyncApiName": "slackclone",
+  "DynamoDBBillingMode": "PAY_PER_REQUEST",
+  "DynamoDBEnableServerSideEncryption": false,
+  "AuthCognitoUserPoolId": {
+    "Fn::GetAtt": [
+      "authslackclone5fcd1cbb",
+      "Outputs.UserPoolId"
+    ]
+  }
+}

@@ -1,0 +1,38 @@
+type Group
+  @model(subscriptions: null)
+  @auth(
+    rules: [
+      { allow: groups, groups: ["admin"], operations: [create, read, update, delete], provider: userPools } # 管理者用のグループは全て許可する
+      { allow: private, operations: [read], provider: userPools }
+    ]
+  ) {
+    id: ID! @primaryKey
+    name: String!
+    accounts: [GroupAccount!] 
+  }
+
+type GroupAccount
+  @model(subscriptions: null)
+  @auth(
+    rules: [
+      { allow: groups, groups: ["admin"], operations: [create, read, update, delete], provider: userPools } # 管理者用のグループは全て許可する
+      { allow: private, operations: [read], provider: userPools }
+    ]
+  ) {
+    id: ID! @primaryKey
+    group: Group!
+    account: Account!
+  }
+
+type Account
+  @model(subscriptions: null)
+  @auth(
+    rules: [
+      { allow: groups, groups: ["admin"], operations: [create, read, update, delete], provider: userPools } # 管理者用のグループは全て許可する
+      { allow: private, operations: [read], provider: userPools }
+    ]
+  ) {
+    id: ID! @primaryKey # CognitoのユーザーID
+    name: String! # ユーザー名
+    avatarId: String # アバターID
+  }

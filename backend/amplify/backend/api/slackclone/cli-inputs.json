@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "serviceConfiguration": {
+    "apiName": "slackclone",
+    "serviceName": "AppSync",
+    "gqlSchemaPath": "/Users/shiningbless/Workspace/slackClone/backend/amplify/backend/api/slackclone/schema.graphql",
+    "defaultAuthType": {
+      "mode": "AMAZON_COGNITO_USER_POOLS",
+      "cognitoUserPoolId": "authslackclone5fcd1cbb"
+    }
+  }
+}
